@@ -1,15 +1,15 @@
-name: discord_bot
-description: A simple command-line application.
+name: my_discord_bot
+description: A simple Discord bot.
 version: 1.0.0
-# repository: https://github.com/my_org/my_repo
+publish_to: none
 
 environment:
-  sdk: ^3.5.4
+  sdk: '>=3.0.0 <4.0.0'
 
-# Add regular dependencies here.
 dependencies:
-  nyxx: ^6.5.2
-  # path: ^1.8.0
+  nyxx: ^5.0.0 # Use the latest version of nyxx
+  nyxx_commands: ^5.0.0 # Use the latest version of nyxx_commands
+  nyxx_interactions: ^5.0.0 # Also a good idea to include this for slash commands
 
 dev_dependencies:
-  lints: ^4.0.0
+  lints: ^2.0.0
